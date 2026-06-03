@@ -12,6 +12,9 @@ CREATE TABLE IF NOT EXISTS users (
 -- Insert default user (username: admin, password: admin123)
 INSERT INTO users (username, password) VALUES ('admin', 'admin123');
 
+-- Insert melissa user (username: melissa, password: melissa123)
+INSERT INTO users (username, password) VALUES ('melissa', 'melissa123');
+
 -- Create Supplier table
 CREATE TABLE IF NOT EXISTS Supplier (
   id INT AUTO_INCREMENT PRIMARY KEY,

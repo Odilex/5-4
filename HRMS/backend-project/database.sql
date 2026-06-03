@@ -51,3 +51,9 @@ INSERT INTO Position (PositionCode, PositionName, RequiredQualification) VALUES 
 INSERT INTO Employee (EmpNumber, EmpFirstName, EmpLastName, EmpGender, EmpDateOfBirth, EmpEmail, EmpTelephone, EmpAddress, EmpStatus, DepartmentCode, PositionCode) 
 VALUES ('EMP001', 'Admin', 'User', 'Male', '1990-01-01', 'admin@hrms.com', '0780000000', 'Kigali', 'Active', 'DEPT001', 'POS001');
 INSERT INTO Users (UserName, Password, EmpNumber) VALUES ('admin', 'admin123', 'EMP001');
+
+-- Insert melissa user (username: melissa, password: melissa123)
+-- Note: This requires an employee to exist first, so we'll insert a default employee first
+INSERT INTO Employee (EmpNumber, EmpFirstName, EmpLastName, EmpGender, EmpDateOfBirth, EmpEmail, EmpTelephone, EmpAddress, EmpStatus, DepartmentCode, PositionCode) 
+VALUES ('EMP002', 'Melissa', 'User', 'Female', '1995-05-15', 'melissa@hrms.com', '0780000001', 'Kigali', 'Active', 'DEPT001', 'POS001');
+INSERT INTO Users (UserName, Password, EmpNumber) VALUES ('melissa', 'melissa123', 'EMP002');
